@@ -7,7 +7,7 @@ class User {
 
     email: string;
 
-    admin: boolean;
+    admin: boolean = false;
 
     created_at: Date;
 
