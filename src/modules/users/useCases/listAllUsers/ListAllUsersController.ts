@@ -10,7 +10,7 @@ class ListAllUsersController {
         const userId = { user_id: id.toString() };
         const allUsers = this.listAllUsersUseCase.execute(userId);
 
-        return response.json(allUsers);
+        return response.json(allUsers).send();
     }
 }
 

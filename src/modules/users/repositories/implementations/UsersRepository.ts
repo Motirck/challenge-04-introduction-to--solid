@@ -44,11 +44,20 @@ class UsersRepository implements IUsersRepository {
     }
 
     turnAdmin(receivedUser: User): User {
-        // Complete aqui
+        let adminUser: User;
+
+        this.users.forEach(user => {
+            if (user === receivedUser) {
+                user.admin = true;
+                adminUser = user;
+            }
+        });
+
+        return adminUser;
     }
 
     list(): User[] {
-        // Complete aqui
+        return this.users;
     }
 }
 
