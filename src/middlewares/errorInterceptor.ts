@@ -9,13 +9,13 @@ export function errorInterceptor(
     next: NextFunction, // Next is required even if not used
 ): Response {
     if (err instanceof ErrorHandler) {
-        const { name, message, description, statusCode } = err;
+        const { message, name, description, statusCode } = err;
 
-        return res.status(statusCode).json({ name, message, description });
+        return res.status(statusCode).json({ error: message, name, description });
     }
 
     return res.status(500).json({
         status: 'error',
-        message: 'Internal Server Error',
+        error: 'Internal Server Error',
     });
 }
