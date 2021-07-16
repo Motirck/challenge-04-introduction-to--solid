@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import { Request, Response, NextFunction } from 'express';
 
 import { ErrorHandler } from '../handlers/ErrorHandler';
 
@@ -6,6 +6,7 @@ export function errorInterceptor(
     err: ErrorHandler,
     req: Request,
     res: Response,
+    next: NextFunction, // Next is required even if not used
 ): Response {
     if (err instanceof ErrorHandler) {
         const { name, message, description, statusCode } = err;
