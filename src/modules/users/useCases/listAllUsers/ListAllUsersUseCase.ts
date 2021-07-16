@@ -16,7 +16,7 @@ class ListAllUsersUseCase {
             const err = {
                 name: 'ListUserByIdFailed',
                 message: 'User not found',
-                statusCode: 404,
+                statusCode: 400,
                 description: 'User with this id not found.',
             };
 
