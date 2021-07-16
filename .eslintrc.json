@@ -63,5 +63,6 @@
     "import/resolver": {
       "typescript": {}
     }
-  }
+  },
+  "no-param-reassign": "off"
 }
