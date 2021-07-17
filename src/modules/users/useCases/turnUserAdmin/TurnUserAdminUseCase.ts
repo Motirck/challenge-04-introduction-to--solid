@@ -1,5 +1,4 @@
 import { ErrorHandler } from '../../../../handlers/ErrorHandler';
-
 import { User } from '../../model/User';
 import { IUsersRepository } from '../../repositories/IUsersRepository';
 

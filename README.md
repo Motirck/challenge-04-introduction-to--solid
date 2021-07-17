@@ -1,6 +1,9 @@
-# Challenge 04 - Introduction to SOLID 🚀🚀🚀
+# Challenges: 📌
+## 04 - Introduction to SOLID 🚀
+## 05 - Documenting with Swagger 🚀
+---
 
-## About the challenge
+## About the challenges
 
 ### Application Routes 🔥
 ---
@@ -18,10 +21,28 @@
 * UseCases Tests
 * Route tests
 
-### Challange Details 🔥
+### Challange 04 Details 🔥
 ---
 
 This will be a user listing and registration application. For the user listing to work, the user requesting the listing must be an admin.
+
+### Challange 05 Details 🔥
+---
+
+* Install the swagger-ui-express lib;
+* Create a JSON file for you to write documentation on the OpenAPI 3.0 specification;
+* Instantiate in your application an api-docs route that will serve your
+documentation.
+
+The documentation should serve as a description of your API's inputs and outputs:
+
+* General API information (name, description, etc.);
+* Routes;
+* Parameters;
+* Requisition Body;
+* Successful answers;
+* Error responses;
+* Examples.
 
 ### Necessary Commands to install dependencies 📌
 ---
