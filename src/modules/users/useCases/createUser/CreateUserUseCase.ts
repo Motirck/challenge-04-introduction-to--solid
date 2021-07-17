@@ -1,6 +1,5 @@
-import { User } from '../../model/User';
 import { ErrorHandler } from '../../../../handlers/ErrorHandler';
-
+import { User } from '../../model/User';
 import { IUsersRepository } from '../../repositories/IUsersRepository';
 
 interface IRequest {
@@ -19,7 +18,8 @@ class CreateUserUseCase {
                 name: 'CreateUserFailed',
                 message: 'Informed email is already in use.',
                 statusCode: 400,
-                description: 'Informed email is already in use. Inform a diferent one.',
+                description:
+                    'Informed email is already in use. Inform a diferent one.',
             };
 
             throw new ErrorHandler(err);
